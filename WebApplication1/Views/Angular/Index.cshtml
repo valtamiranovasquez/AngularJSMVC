@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts {
+
+    <script src="~/Scripts/app/app.js"></script>
+<script src="~/Scripts/app/Controladores/EjemploControler.js"></script>
+
+}
+<h2>Index</h2>
+
+<div ng-app="modulo">
+    <div ng-controller="EjemploController">
+        <input type="text" ng-model="apellido"  />
+       <button ng-click="mensaje(apellido)"></button>
+    </div>
+</div>
